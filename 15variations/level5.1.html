@@ -35,16 +35,48 @@ p {
 }
 
 
+.blink_text {
+
+    animation:1s blinker linear infinite;
+    -webkit-animation:1s blinker linear infinite;
+    -moz-animation:1s blinker linear infinite;
+
+     color: blue;
+     font-size: 50px;
+     text-decoration: underline;
+     font-weight: 20px;
+     font-kerning: 5px;
+     font-family: courier;
+    }
+
+    @-moz-keyframes blinker {
+     0% { opacity: 1.0; }
+     50% { opacity: 0.0; }
+     100% { opacity: 1.0; }
+     }
+
+    @-webkit-keyframes blinker {
+     0% { opacity: 1.0; }
+     50% { opacity: 0.0; }
+     100% { opacity: 1.0; }
+     }
+
+    @keyframes blinker {
+     0% { opacity: 1.0; }
+     20% { opacity: 0.0; }
+     100% { opacity: 1.0; }
+     }
 
 </style>
 
   <body>
+    <br><br>
 
-    <h1>TEN PRINCIPLES FOR GOOD DESIGN <br><br>
+ <p><span class="blink_text">TEN PRINCIPLES FOR GOOD DESIGN <br><br>
 
-    Dieter Rams</h1><br><br>
+     Dieter Rams<br><br> </span></p>
 
-    <br><br><br><br>
+    <br><br>
     <p><u>Good design is innovative.</u>
       The possibilities for innovation are not, by any means, exhausted. Technological development is always offering new opportunities for innovative design. But innovative design always develops in tandem with innovative technology, and can never be an end in itself.
       <u>Good design makes a product useful.</u> A product is bought to be used. It has to satisfy certain criteria, not only functional, but also psychological and aesthetic.
