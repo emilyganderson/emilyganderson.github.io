@@ -11,6 +11,7 @@ $('.nav_tool').click(function(event){
   $('.item.tool').addClass('show');
 
   $('.nav_clear').addClass('show');
+  $('body').addClass('tool');
 });
 
 
@@ -23,6 +24,7 @@ $('.nav_palette').click(function(event){
   $('.item.palette').addClass('show');
 
   $('.nav_clear').addClass('show');
+  $('body').removeClass('tool');
 });
 
 $('.nav_landscape').click(function(event){
