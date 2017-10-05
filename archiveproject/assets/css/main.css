@@ -14,8 +14,12 @@ body {
   font-family: courier;
 }
 
-body.tool {
-  background-color: red;
+body.tool .title {
+  font-family: courier;
+}
+
+body.tool .container {
+    align-items: center;
 }
 
 .container {
